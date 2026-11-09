@@ -1,0 +1,46 @@
+{
+  "name": "@local/course-handout",
+  "version": "1.0.0",
+  "private": true,
+  "description": "面向学生的模块化课程讲义生成器：设计章节、编写内容，一键产出 DOCX 与 PDF，并可按要求附习题与答案。",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "builder/handout_builder.py",
+    "skills/course-handout.md",
+    "examples/*.json",
+    "docs/*.png",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Nounoumm/course-handout-studio.git"
+  },
+  "homepage": "https://github.com/Nounoumm/course-handout-studio#readme",
+  "bugs": {
+    "url": "https://github.com/Nounoumm/course-handout-studio/issues"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "handout",
+    "education",
+    "docx",
+    "pdf"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "license": "MIT"
+}

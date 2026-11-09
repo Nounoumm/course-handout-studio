@@ -1,0 +1,4 @@
+- insert:
+    - id: course-handout
+      name: '@local/course-handout'
+      config: {}

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Course handout">
+  <rect width="64" height="64" rx="14" fill="#14365C"/>
+  <path d="M11 21c6.4-3.2 12.6-3.1 19 1.1v25.6c-6.4-4.2-12.6-4.3-19-1.1V21z" fill="#F5F7FA"/>
+  <path d="M53 21c-6.4-3.2-12.6-3.1-19 1.1v25.6c6.4-4.2 12.6-4.3 19-1.1V21z" fill="#C9D9EC"/>
+  <path d="M30 22.6h4v26.2h-4z" fill="#14365C"/>
+  <path d="M39 12h7.5v17l-3.75-3.2L39 29V12z" fill="#E3A33B"/>
+</svg>
