@@ -19,6 +19,7 @@
     "examples/*.json",
     "docs/*.png",
     "README.md",
+    "README.en.md",
     "LICENSE"
   ],
   "repository": {

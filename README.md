@@ -1,5 +1,9 @@
 # 课程讲义工坊 · Course Handout Studio
 
+[中文](README.md) | [English](README.en.md)
+
+[![CI](https://github.com/Nounoumm/course-handout-studio/actions/workflows/ci.yml/badge.svg)](https://github.com/Nounoumm/course-handout-studio/actions/workflows/ci.yml)
+
 面向学生的 Harness 插件：学生提出一个主题，助手把它扩展成**模块化、知识点齐全**的讲义，补全例题、易错点与分层习题，然后一键生成 **DOCX + PDF**。
 
 ![讲义封面](docs/preview-cover.png)

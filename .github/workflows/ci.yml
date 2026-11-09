@@ -1,0 +1,44 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Check JavaScript syntax
+        run: node --check index.js
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install python-docx
+        run: python -m pip install --upgrade pip python-docx
+
+      - name: Compile the builder
+        run: python -m py_compile builder/handout_builder.py
+
+      - name: Validate the example spec
+        run: python -m json.tool examples/c-pointer-demo.json > /dev/null
+
+      - name: Build the example DOCX
+        run: python builder/handout_builder.py build --spec examples/c-pointer-demo.json --out build/demo.docx
+
+      - name: Upload the example DOCX
+        uses: actions/upload-artifact@v4
+        with:
+          name: example-docx
+          path: build/demo.docx
