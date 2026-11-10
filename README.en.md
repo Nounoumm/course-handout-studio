@@ -31,7 +31,26 @@ It also registers the `course-handout` skill, which encodes chapter design, a kn
 
 ## Install
 
-Clone the repository, then install the local bundle in a Harness session:
+### From the plugin store (Discover)
+
+The DSH plugin store is driven by user-configured **market indexes**. This repository ships a format-1 index:
+
+```text
+https://raw.githubusercontent.com/Nounoumm/course-handout-studio/main/market/index.json
+```
+
+1. Open **Plugins → More** (Experimental plugins) and enable **Custom plugin markets**.
+2. Go to **Discover → Add index** and paste the URL above.
+3. Find **Course Handout Studio** and install it.
+
+### Direct install
+
+```text
+plugin_manager install_bundle
+target: git+https://github.com/Nounoumm/course-handout-studio.git#7808c128cc3f70230ee1ca2b4bad288fb0e32695
+```
+
+Or clone the repository and install the local directory (for development):
 
 ```text
 plugin_manager install_bundle

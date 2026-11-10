@@ -31,7 +31,26 @@
 
 ## 安装
 
-先把仓库克隆到本机，然后在 Harness 会话里安装本地 bundle：
+### 从插件商店（Discover）安装
+
+DSH 的插件商店由用户配置的 **market index** 驱动。本仓库自带一份格式 1 索引：
+
+```text
+https://raw.githubusercontent.com/Nounoumm/course-handout-studio/main/market/index.json
+```
+
+1. 打开 **Plugins → More**（Experimental plugins），启用 **Custom plugin markets**。
+2. 进入 **Discover → Add index**，粘贴上面的 URL。
+3. 找到 **Course Handout Studio**，点击安装。
+
+### 直接安装
+
+```text
+plugin_manager install_bundle
+target: git+https://github.com/Nounoumm/course-handout-studio.git#7808c128cc3f70230ee1ca2b4bad288fb0e32695
+```
+
+也可以克隆仓库后安装本地目录（适合二次开发）：
 
 ```text
 plugin_manager install_bundle
