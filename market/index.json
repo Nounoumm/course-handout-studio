@@ -1,0 +1,82 @@
+{
+  "format": 1,
+  "title": {
+    "en": "Course Handout Studio",
+    "zh": "课程讲义工坊"
+  },
+  "description": {
+    "en": "A student-facing DeepSeek Harness plugin that turns a topic request into a modular handout with complete knowledge points, exercises, and DOCX + PDF output.",
+    "zh": "面向学生的 DeepSeek Harness 讲义生成插件：把一次提问扩展成模块化、知识点齐全的讲义，配分层习题，并输出 DOCX 与 PDF。"
+  },
+  "metadata": {
+    "categories": {
+      "education": {
+        "title": {
+          "en": "Education",
+          "zh": "教育学习"
+        }
+      }
+    },
+    "labels": {
+      "docx": {
+        "title": {
+          "en": "DOCX",
+          "zh": "DOCX"
+        }
+      },
+      "pdf": {
+        "title": {
+          "en": "PDF",
+          "zh": "PDF"
+        }
+      }
+    },
+    "sortKeys": {}
+  },
+  "plugins": [
+    {
+      "name": "@local/course-handout",
+      "title": {
+        "en": "Course Handout Studio",
+        "zh": "课程讲义工坊"
+      },
+      "description": {
+        "en": "Design modular chapters, write complete knowledge points, and export DOCX + PDF. Includes four templates, validation, and tiered exercises with answers.",
+        "zh": "按主题设计模块化章节，补全知识点、例题与易错点，一键输出 DOCX + PDF；含四种模板、结构检查与分层习题答案。"
+      },
+      "icon": "https://raw.githubusercontent.com/Nounoumm/course-handout-studio/main/icon.svg",
+      "author": "Nounoumm",
+      "homepage": "https://github.com/Nounoumm/course-handout-studio#readme",
+      "repository": {
+        "url": "https://github.com/Nounoumm/course-handout-studio"
+      },
+      "metadata": {
+        "category": "education",
+        "keywords": [
+          "handout",
+          "讲义",
+          "education",
+          "docx",
+          "pdf",
+          "exercises"
+        ],
+        "labels": [
+          "docx",
+          "pdf"
+        ],
+        "sortKeys": {}
+      },
+      "versions": [
+        {
+          "version": "1.0.0",
+          "publishTimestamp": 1794291600,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/Nounoumm/course-handout-studio",
+            "commit": "7808c128cc3f70230ee1ca2b4bad288fb0e32695"
+          }
+        }
+      ]
+    }
+  ]
+}
